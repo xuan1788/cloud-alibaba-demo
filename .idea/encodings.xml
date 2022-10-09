@@ -11,6 +11,11 @@
     <file url="file://$PROJECT_DIR$/cloud-order/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-strategies/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/cloud-user/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-xxl-job-admin/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-xxl-job-core/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-xxl-job-executor/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-xxl-job/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/cloud-xxl-job/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>

@@ -14,8 +14,17 @@
     <module>cloud-market</module>
     <module>cloud-user</module>
     <module>cloud-kline</module>
+    <module>cloud-xxl-job-core</module>
+    <module>cloud-xxl-job-admin</module>
+    <module>cloud-xxl-job-executor</module>
   </modules>
-  <name>Archetype - cloud-alibaba-demo</name>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot</artifactId>
+        </dependency>
+    </dependencies>
+    <name>Archetype - cloud-alibaba-demo</name>
   <url>http://maven.apache.org</url>
   <!---->
   <parent>
