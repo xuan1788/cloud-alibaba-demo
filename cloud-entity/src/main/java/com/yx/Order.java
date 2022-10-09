@@ -1,4 +1,4 @@
-package cn.cloud.market;
+package com.yx;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

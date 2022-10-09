@@ -1,6 +1,12 @@
-package com.yx.controller;/**
- * @time 2022/10/8 14:08
- * @version 1.00
+package com.yx.kline.controller;
+
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+/**
  * @author YX_Z
-*/public class KLineController {
+ * @version 1.00
+ * @time 2022/10/8 14:08
+ */
+
+public class KLineController {
 }

@@ -1,4 +1,4 @@
-package com.yx.boot.config;
+package com.yx.strategy.config;
 
 /**
  * @author YX_Z
@@ -6,7 +6,6 @@ package com.yx.boot.config;
  * @time 2022/10/4 15:32
  */
 import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -18,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @Configuration
 @EnableSwagger2
-//@ComponentScan(basePackages = "com.yyg.boot.web")
+//@ComponentScan(basePackages = "com.yx.boot.web")
 public class Swagger2Config {
 
         @Bean
@@ -26,18 +25,19 @@ public class Swagger2Config {
             return new Docket(DocumentationType.SWAGGER_2)
                     .select()
                     .apis(RequestHandlerSelectors.any())
-                    .apis(RequestHandlerSelectors.basePackage("com.yx.boot.web"))
+                    .apis(RequestHandlerSelectors.basePackage("com.yx.strategy"))
                     //.paths(PathSelectors.any())
                     .build()
                     .apiInfo(apiInfo());
         }
 
         private ApiInfo apiInfo() {
+            Contact contact = new Contact("宇轩的接口测试平台", "https://172.16.1.41/xuan", "yuxuan.zhu@transwarp.cn");
             return new ApiInfoBuilder()
-                    .title("XXX项目接口文档")
-                    .description("XXX项目接口测试")
+                    .title("量化交易平台项目，策略服务API文档")
+                    .description("包含策略服务API")
                     .version("1.0.1")
-                    .contact(new Contact("一一哥","https://yiyige.blog.csdn.net/","2312119590"))
+                    .contact(contact)
                     .termsOfServiceUrl("")
                     .license("")
                     .licenseUrl("")

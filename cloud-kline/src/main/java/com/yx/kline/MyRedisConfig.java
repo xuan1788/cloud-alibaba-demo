@@ -1,4 +1,4 @@
-package com.yx.kline.config;
+package com.yx.kline;
 
 import com.yx.User;
 import org.springframework.context.annotation.Bean;

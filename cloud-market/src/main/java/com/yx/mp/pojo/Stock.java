@@ -1,4 +1,4 @@
-package cn.cloud.market.mp.pojo;
+package com.yx.mp.pojo;
 
 import com.baomidou.mybatisplus.annotation.TableField;
 import com.baomidou.mybatisplus.annotation.TableId;

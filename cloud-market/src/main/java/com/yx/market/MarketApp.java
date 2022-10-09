@@ -1,4 +1,4 @@
-package com.yx;
+package com.yx.market;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

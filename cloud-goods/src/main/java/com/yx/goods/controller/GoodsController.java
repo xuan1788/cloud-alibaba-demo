@@ -1,4 +1,4 @@
-package com.yx.controller;
+package com.yx.goods.controller;
 
 import com.yx.Goods;
 import org.springframework.beans.factory.annotation.Value;

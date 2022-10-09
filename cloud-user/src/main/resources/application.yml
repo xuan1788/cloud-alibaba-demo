@@ -1,11 +1,11 @@
-spring:
-  application:
-    name: cloud-goods # 服务名称，必须配置且保持唯一
-  cloud:
-    nacos:
-      discovery:
-        server-addr: localhost:8848
-        username: nacos
-        password: nacos
+#spring:
+#  application:
+#    name: cloud-user # 服务名称，必须配置且保持唯一
+#  cloud:
+#    nacos:
+#      discovery:
+#        server-addr: localhost:8848
+#        username: nacos
+#        password: nacos
 server:
-  port: ${port:8080}
+  port: 8090

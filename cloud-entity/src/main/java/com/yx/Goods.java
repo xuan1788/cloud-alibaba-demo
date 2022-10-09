@@ -1,4 +1,4 @@
-package cn.cloud.market;
+package com.yx;
 
 import com.oracle.webservices.internal.api.databinding.DatabindingMode;
 import lombok.AllArgsConstructor;

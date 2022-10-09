@@ -1,11 +1,43 @@
 spring:
   application:
-    name: cloud-goods # 服务名称，必须配置且保持唯一
+    name: cloud-order # 服务名称，必须配置且保持唯一
   cloud:
     nacos:
       discovery:
         server-addr: localhost:8848
         username: nacos
         password: nacos
+        namespace: sit
+        group: DEFAULT_GROUP
 server:
-  port: 9001
+  port: 9002
+ribbon:
+  eager-load:
+    enable: true
+    clients:
+      -cloud-strategies
+      -cloud-goods
+feign:
+  client:
+    config:
+      cloud-strategies:
+        connect-timeout: 1000
+        read-timeout: 1000
+      default:
+        connect-timeout: 1000
+        read-timeout: 1000
+
+##hystrix的超时时间
+#hystrix:
+#  command:
+#    default:
+#      execution:
+#        timeout:
+#          enabled: true
+#        isolation:
+#          thread:
+#            timeoutInMilliseconds: 30000
+##ribbon的超时时间
+#ribbon:
+#  ReadTimeout: 30000
+#  ConnectTimeout: 30000

@@ -1,4 +1,4 @@
-package com.yx.controller;
+package com.yx.market.controller;
 
 import com.yx.mp.pojo.Stock;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -16,7 +16,6 @@ public class StockMarketController {
 
     public Stock findByTradeDay(@PathVariable String day) {
         System.out.println("day"+day);
-        System.load("items.json");
         return new Stock("000503", "国新健康",819687.30, 827380.27, 89877.99, 90721.52);
     }
 

@@ -1,6 +1,9 @@
-package com.yx.mp;/**
- * @time 2022/9/30 10:06
- * @version 1.00
+package com.yx.mp;
+
+/**
  * @author YX_Z
-*/public class TestUserMapper {
+ * @version 1.00
+ * @time 2022/9/30 10:06
+ */
+public class TestUserMapper {
 }

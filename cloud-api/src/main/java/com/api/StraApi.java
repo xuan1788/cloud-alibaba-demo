@@ -2,11 +2,9 @@ package com.api;
 
 import com.yx.Strategy;
 import org.springframework.cloud.openfeign.FeignClient;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.*;
 
-import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -15,9 +13,23 @@ import java.util.Map;
  * @time 2022/9/23 11:11
  */
 @FeignClient("cloud-strategies")
-@RequestMapping("strategies")
-public class StraApp {
-    @RequestMapping(value = "/save")
-    public Map save(@RequestBody Strategy st);
+@RequestMapping("/strategies")
+public interface StraApi {
+    @PostMapping(value = "/save")
+    public Map save(@RequestBody Strategy st) ;
 
+    @PostMapping(value = "/update")
+    public Map update(@RequestBody Strategy st);
+
+    @GetMapping(value = "/delete")
+    public Map deleteById(@RequestParam("strategyid") Integer stId);
+
+    @GetMapping(value = "/{strategyid}")
+    public Strategy findStrategyById(@PathVariable Integer strategyid);
+
+    @PostMapping(value = "/searchByEntity")
+    public List<Strategy> searchMap(@RequestBody Strategy st);
+
+    @PostMapping (value = "/factor_research")
+    public Map factor_research();
 }

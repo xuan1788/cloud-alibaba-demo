@@ -1,0 +1,17 @@
+# 从配置中心加载配置文件
+# 文件名是通过公式拼接${prefix}-${spring.profiles.active}.${file-extension}
+spring:
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        namespace: sit
+        group: DEFAULT_GROUP
+        username: nacos
+        password: nacos
+        prefix: cloud-strategies
+        file-extension: yml
+        shared-configs: # 加载共享配置文件
+          - common.yml
+  profiles:
+    active: sit

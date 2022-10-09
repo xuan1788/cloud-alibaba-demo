@@ -1,4 +1,4 @@
-package com.yx.controller;
+package com.yx.order.controller;
 
 import com.api.StraApi;
 import com.yx.Strategy;
@@ -14,7 +14,7 @@ import java.util.Map;
  * @time 2022/9/20 13:54
  */
 @RestController
-@RequestMapping("order")
+@RequestMapping("/order")
 public class OrderController {
 
 
